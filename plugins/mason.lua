@@ -5,7 +5,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      -- ensure_installed = { "lua_ls" },
+      ensure_installed = { "lua_ls" }, -- do not need rust_analyzer as it is handled in a community package
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -20,7 +20,7 @@ return {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      -- ensure_installed = { "python" },
+      ensure_installed = { "lua" },
     },
   },
 }
